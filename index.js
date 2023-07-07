@@ -13,10 +13,10 @@ app.use(cors());
 
 app.use('/users' , userRouter);
 
-app.listen(process.env.port, async()=>{
+app.listen(8080, async()=>{
     try {
         await connection;
-        console.log(`port is runnig at ${process.env.port}`);
+        console.log(`port is runnig at 8080`);
         console.log("connected to db");
     } catch (error) {
         console.log(error.message);
